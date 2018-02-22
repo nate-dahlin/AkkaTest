@@ -1,0 +1,25 @@
+<h1>
+  {{title}}
+</h1>
+
+<button (click)="uiHealthCheck()">UI Health Check</button>
+{{UIHealthCheck}}
+<br/>
+<button (click)="apiHealthCheck()">API Health Check</button>
+{{APIHealthCheck}}
+<br />
+<button (click)="apiHealthCheckAkka()">API Health Check with Akka</button>
+{{APIHealthCheckAkka}}
+<br />
+Fill in textbox and press Enter or Button to execute<br />
+<input #messageBox (keyup.enter)="fooBar(messageBox.value)" />
+<button (click)="fooBar(messageBox.value)">FooBar</button>
+{{FooBar}}
+<br />
+Fill in textbox and press Enter or Button to execute (<b>Delayed</b>)<br />
+<input #messageBoxDelayed (keyup.enter)="fooBarDelayed(messageBoxDelayed.value)" />
+<button (click)="fooBarDelayed(messageBoxDelayed.value)">FooBar Delayed</button>
+{{FooBarDelayed}}
+<br />
+<button (click)="fooBarChildren()">Get FooBar Children</button>
+{{FooBarChildren}}
